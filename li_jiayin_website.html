@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李佳鑫的文艺世界</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #f4f0e6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://via.placeholder.com/1920x500?text=%E5%8F%A4%E9%A3%8E%E8%83%8C%E6%99%AF') no-repeat center center/cover;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        header h1 {
+            font-size: 3rem;
+            text-align: center;
+        }
+        nav {
+            background: #8a796d;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 2em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .poetry, .quotes, .lyrics {
+            margin-bottom: 2em;
+            padding: 1em;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #8a796d;
+            color: #fff;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        h2 {
+            color: #4b4b4b;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        .quote, .poem-text, .song-text {
+            font-style: italic;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            padding: 1em;
+            background-color: #e8e1d9;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            background-color: #f8f8f8;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #8a796d;
+            color: white;
+            border: none;
+            padding: 1em 2em;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #7f6b59;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>李佳鑫的文艺世界</h1>
+</header>
+
+<nav>
+    <a href="#about">关于我</a>
+    <a href="#poetry">古诗词</a>
+    <a href="#quotes">电影台词</a>
+    <a href="#lyrics">陈奕迅歌词</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<section id="about">
+    <h2>关于我</h2>
+    <p>我是李佳鑫，一个追求梦想的人，探索古风与现代融合的世界。</p>
+    <p>“人生若只如初见，何事秋风悲画扇。” —— 纳兰性德</p>
+</section>
+
+<section id="poetry" class="poetry">
+    <h2>古诗词</h2>
+    <div class="poem-text">
+        <p>“月上柳梢头，人约黄昏后。” —— 欧阳修</p>
+    </div>
+    <div class="poem-text">
+        <p>“床前明月光，疑是地上霜。” —— 李白</p>
+    </div>
+</section>
+
+<section id="quotes" class="quotes">
+    <h2>电影台词</h2>
+    <div class="quote">
+        <p>“每个人都会经过这个阶段，见到山以为那边会更好。” —— 《东邪西毒》</p>
+    </div>
+    <div class="quote">
+        <p>“生活就像一场戏，你永远不知道下一个场景会有什么。” —— 《霸王别姬》</p>
+    </div>
+</section>
+
+<section id="lyrics" class="lyrics">
+    <h2>陈奕迅歌词</h2>
+    <div class="song-text">
+        <p>“我愿意为你守候，只为你，化身为风。” —— 《十年》</p>
+    </div>
+    <div class="song-text">
+        <p>“谁在用琵琶弹奏一曲东风破。” —— 《东风破》</p>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>联系我</h2>
+    <form class="contact-form">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">邮箱</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">留言</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">发送留言</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 李佳鑫的文艺世界. 版权所有.</p>
+</footer>
+
+</body>
+</html>
